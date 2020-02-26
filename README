@@ -1,0 +1,48 @@
+    ===================================
+            1. DESCRIPTION
+    ===================================
+
+    Script creates telegram bot for exchange rates.
+
+    ===================================
+            2. USAGE
+    ===================================
+
+    2.1 RUN EXAMPLE
+        
+        python3.6 telegram_exchange_bot.py
+
+        The following command will
+         - create telegram bot
+        For adding current DB you should edit options in the telegram_exchange_bot.py file
+
+        For using bot please open telegram and find echange_user_bot.
+        For starting conversation enter /start.
+        For getting list please enter /lst or /list.
+        For converting enter /exchange, then enter the following pattern:  $20 to USD or 20 USD to CAD
+                                                                        Writing  'to'  in patttern is required.
+        For getting last 7 days information plotted diagram image enter /history, then type the following pattern: usd/cad.
+                                                                        Writing '/' between currencies is required.
+    ===================================
+            3. REQUIREMENTS
+    ===================================
+
+    This section describes requirements the environment must meet to
+    run the script.
+
+    3.1 PYTHON VERSION
+        The script requires python version 3.6.x. Recommended version is 3.6.8
+
+    3.2 PLATFORM
+        The script is designed to run on Linux platforms.
+
+    3.3 LIBRARIES
+        The script requires the following libraries:
+            os,re, sys, logging, requests, json, telebot, pymysql, pymysql.cursors,
+            dateime, enum, matplotlib
+
+        INSTALLATION
+            To install the necessary (missing) libraries you can use the
+            python pip3 command.
+            https://docs.python.org/2.7/installing/index.html
+
